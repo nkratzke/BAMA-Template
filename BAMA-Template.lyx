@@ -1173,7 +1173,7 @@ name "tab:Grade-scale-of"
 \end_layout
 
 \begin_layout Subsection
-Example: How to embed anda figure
+Example: How to embed and reference a figure
 \end_layout
 
 \begin_layout Standard
@@ -1501,6 +1501,13 @@ end{lstlisting}
 
 \begin_layout Chapter
 Literature Research and Requirements Analysis
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Literature-Research-and"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1570,21 +1577,186 @@ reference "sec:Text-structuring-advices"
 
 \begin_layout Chapter
 System Architecture
-\end_layout
-
-\begin_layout Chapter
-Software Architecture and/or Inner Software/Data Component Design
-\end_layout
-
-\begin_layout Chapter
-Implementation Description
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Implementation-Description"
+name "chap:System-Architecture"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Within this chapter you should reflect the overall architecture of your
+ problem domain and describe it as a general guidance structure to your
+ solution.
+ This might be the system and its interfaces you have to deal with (provide
+ your sources you used to derive the system architecture).
+ Or if the system architecture has to be developed you should use this chapter
+ to document these steps and their relevant outcomes here.
+ In both cases you should align the in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+ derived requirements to the here presented system architecture.
+ Do not forget to mention or develop architecture principles (e.g.
+ loose coupling, publish-subscriber pattern, etc.) providing guidance to
+ all following software engineering steps.
+\end_layout
+
+\begin_layout Standard
+Whenever you have made architectural decisions influencing your solution
+ you should reflect and document your reasons why you choose solution A
+ instead of B or C.
+ You should also document your decision criteria in these cases.
+ 
+\end_layout
+
+\begin_layout Standard
+If you use special architecture modeling techniques like UML, SysML, etc.
+ you should explain the key concepts of these techniques from a general
+ point of view (provide references to your sources) and provide reasons
+ why this technique is appropriate for your problem and how it fits to your
+ used requirements engineering technique presented in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If you provide only a/some component(s) to a system/software you should
+ use the here presented architecture to depict your part of responsibility
+ (components of responsibility).
+ It is a good strategy to do this in graphical way.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+You should keep an eye on your references -- especially when deriving your
+ system architecture.
+\end_layout
+
+\begin_layout Itemize
+Do not copy word by word.
+ If you do - this might be usefull in some cases - mark these parts clearly
+ as cites or quotes (check section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Citing-and-referencing"
+
+\end_inset
+
+ how to do that).
+\end_layout
+
+\begin_layout Itemize
+Use the citing features of the in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ mentioned typesetting systems to handle this automatically and frictionless.
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
+ Your section structure should be aligned in some way to the structure of
+ your top level architecture in order to support readability and understandabili
+ty.
+\end_layout
+
+\begin_layout Chapter
+Software Architecture and/or Software/Data Component Design
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Software-Architecture-and/or"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Within this chapter you should reflect the software architecture of your
+ components of responsibility (defined in the chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+).
+ Furthermore you should align the in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+ derived requirements as well as the architecture principles and your components
+ of responsibility (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+) to the here presented software architecture.
+ The detail level depends on your thesis subject.
+ It might be necessary to derive detail architectures for very complex component
+s.
+ It might be also necessary to provide some data models if you have an data
+ intensive problem to solve.
+\end_layout
+
+\begin_layout Standard
+Whenever you have made architectural decisions influencing your solution
+ you should reflect and document your reasons why you choose solution A
+ instead of B or C.
+ You should also document your decision criteria in these cases.
+ 
+\end_layout
+
+\begin_layout Standard
+If you use special software modeling techniques like UML, ERM, etc.
+ you should explain the key concepts of these techniques from a general
+ point of view (provide references to your sources) and provide reasons
+ why this technique is appropriate for your special component problem and
+ how it fits to your used requirements engineering technique (see chapter
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+) as well as system architecture approach (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1600,16 +1772,191 @@ reference "sec:Text-structuring-advices"
 \end_inset
 
  in order to find an appropriate section structure for this chapter.
+ 
+\end_layout
+
+\begin_layout Itemize
+Your section structure should be aligned in some way to the components of
+ responsibility of your top level architecture (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+) in order to support readability, understandability as well as traceability.
+\end_layout
+
+\begin_layout Itemize
+Do not provide to detailed models in this section.
+ If you need to provide details of crucial relevance you should document
+ this in the following chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-Description"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
-{Plugin Development}
+Implementation Description
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Implementation-Description"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Within this chapter you should reflect the implementation of your components
+ of responsibility (defined in the chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+) and provide a general overview of your implementation as a general guidance.
+ Describe recurring principles of your implementation.
+\end_layout
+
+\begin_layout Standard
+Whenever you have made implementation decisions influencing your solution,
+ performance or your requirements you should reflect and document your reasons
+ why you choose solution A instead of B or C.
+ You should also document your decision criteria in these cases.
+ 
+\end_layout
+
+\begin_layout Standard
+If you use different programming languages like JAVA, Python, C, C++, Haskell,
+ PHP, etc.
+ you should explain the key programming paradigms of these programing languages
+ from a general point of view (provide references to your sources) and provide
+ reasons why you used which language for which component.
+ You should also describe how you regarded architecture principles on implementa
+tion level.
+ 
+\end_layout
+
+\begin_layout Standard
+If you use code generation techniques (e.g.
+ GUI Builder use code generators) you should explain the key concepts of
+ these techniques and describe how you applied these techniques in order
+ to solve your problem.
+ You should also reflect which artefacts are generated and if these generated
+ artefacts has to be handled in a special manner -- especially when you
+ have to deal with round trip engineering apsects.
+\end_layout
+
+\begin_layout Standard
+Furthermore you should concentrate in your implementation description on
+ very special aspects which are crucial for your solution.
+ E.g.
+ special algorithms, crucial interfaces, components of high criticality,
+ interaction principles, etc.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
+ 
+\end_layout
+
+\begin_layout Itemize
+Your section structure should be aligned in some way to the components of
+ your software architecture (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+) in order to support readability, understandability as well as traceability.
+\end_layout
+
+\begin_layout Itemize
+Do not provide detailed source code in this section.
+ If you need to provide source code details of crucial relevance you should
+ do this according to section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:How-to-handle"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+{Extensibility}
 \end_layout
 
 \begin_layout Standard
 This chapter is defenitely an optional chapter and only necessary if a thesis
  deals with extandable (plugin) software.
- In this case this chapter should reflect ...
+ In this case this chapter should reflect how your software is extendable.
+ If you do not provide a plugin or a similar concept this chapter can be
+ skipped.
+\end_layout
+
+\begin_layout Standard
+It is a good strategy to identify and describe the relevant extension points
+ of your solution and provide some general remarks how your solution can
+ be extended.
+ 
+\end_layout
+
+\begin_layout Standard
+I a second step you should demonstrate how your solution can be extended
+ by a simple example in step by step howto/tutorial manner.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
+ 
+\end_layout
+
+\begin_layout Itemize
+Your section structure should be aligned in some way to the identified extension
+ points of your solution.
+\end_layout
+
+\begin_layout Itemize
+Typically you have to provide some source code examples in this section.
+ You should do this according to section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:How-to-handle"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
