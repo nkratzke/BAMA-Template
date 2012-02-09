@@ -1,0 +1,1142 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans lmss
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset VSpace 5cm
+\end_inset
+
+Template for Bachelor, Master or Diploma Thesis
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+John Doe
+\end_layout
+
+\begin_layout Author
+Lübeck University of Applied Sciences
+\begin_inset Newline newline
+\end_inset
+
+Department of Electrical Engineering and Computer Science
+\begin_inset Newline newline
+\end_inset
+
+Mönkhofer Weg 239
+\begin_inset Newline newline
+\end_inset
+
+23562 Lübeck
+\begin_inset Newline newline
+\end_inset
+
+Germany
+\end_layout
+
+\begin_layout Section*
+Statement to the diploma thesis
+\end_layout
+
+\begin_layout Standard
+I assure that I have written the diploma thesis independently, without outside
+ help.
+\end_layout
+
+\begin_layout Standard
+Only the given sources have been used for the writing of the diploma thesis.
+ Literally or the sense after taken parts are marked as those.
+\end_layout
+
+\begin_layout Standard
+I agree that my work is published , in particular that the work is presented
+ to third parties for inspection or copies of the work are made to pass
+ on to third parties.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lübeck, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 6cm
+\end_inset
+
+Signature
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+This document provides some general advices and requirements which should
+ be regarded writing a bachelor, master or diploma thesis with a clear focus
+ on computer science -- especially implementating or programming -- related
+ topics.
+ The here mentioned structures, advices and hints are recommendations and
+ do not have to be followed word by word in a dogmatic interpretation.
+ Each thesis has special aspects making it maybe necessary to differ in
+ minor or major parts from this template.
+ Nevertheless all formulated advices of this template shall help you writing
+ a well structured as well as understandable bachelor, master or diploma
+ thesis.
+ So if you plan to break out of the general structure of this template think
+ first about your reason.
+\end_layout
+
+\begin_layout Section
+General writing advices
+\end_layout
+
+\begin_layout Standard
+Do not forget to write your thesis in parallel to your software modeling,
+ programming and testing activities.
+ Thesis which are written after the complete modeling, programming and testing
+ activities are often hardly readable and understandable.
+\end_layout
+
+\begin_layout Standard
+Be aware of the following points:
+\end_layout
+
+\begin_layout Itemize
+With ongoing progress you are becoming more and more an expert within your
+ thesis domain.
+ Nevertheless your surrounding does not run through your very individual
+ learning pogress.
+ So it is very likely at some point that you assume knowledge from your
+ reader which you rate as basic knowledge.
+ Think back if you had this knowledge before you start your thesis.
+ If not - it is very likely that this knowledge could be hardly assumed
+ basic knowledge.
+\end_layout
+
+\begin_layout Itemize
+You should write your thesis for someone who has no detail knowledge about
+ your thesis domain.
+ Do not write your thesis for your supervisor.
+ You should write it for someone who might want to continue your work (maybe
+ another student of the following semester) and needs your knowledge and
+ experience but starts to get into touch with your work from a low experience
+ level.
+\end_layout
+
+\begin_layout Itemize
+Your target audience may be computer scientists but it is likely that they
+ do not have detail knowledge about your thesis domain.
+\end_layout
+
+\begin_layout Itemize
+Especially your second supervisor might be no domain expert.
+ Keep him oder her in mind when writing.
+ But be aware it is very likely that you first get to know your second superviso
+r after you have finished writing your thesis.
+ This is challenging but also very disciplining for writing.
+\end_layout
+
+\begin_layout Itemize
+Remember that you write a technical documentation.
+ So your style of writing should reflect this.
+ Try to write in a formal and professional style you know from e.g.
+ software or other technical manuals.
+ If unsure you should try to copy this style of manual writing (do not copy
+ the texts).
+ 
+\end_layout
+
+\begin_layout Itemize
+Never write sentences like: 
+\begin_inset Quotes eld
+\end_inset
+
+I analysed requirements by applying use case modeling techniques.
+\begin_inset Quotes erd
+\end_inset
+
+ Write instead: 
+\begin_inset Quotes eld
+\end_inset
+
+Requirements were analysed by applying use case modeling techniques.
+\begin_inset Quotes erd
+\end_inset
+
+ So AVOID 
+\begin_inset Quotes eld
+\end_inset
+
+I
+\begin_inset Quotes erd
+\end_inset
+
+ in your paragraphs.
+ You are not writing a diary!
+\end_layout
+
+\begin_layout Section
+Use word processors which are common in science
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Use-word-processors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Typical word processors like MS Word or Open Office are not made for long
+ texts with a lot of references, footnotes, tables, figures, etc.
+ So sometimes you get into trouble if your texts are getting longer and
+ longer as well as your referencing gets more and more complicated.
+ This can be very frustrating especially in your last finalizing steps of
+ your thesis.
+ Nevertheless this is typical for technical documentation and it is typical
+ for a thesis document as well.
+ So you should think about more professional word processors like LaTeX
+ which are very common in the technical and science domain.
+ These tools provide the following features which will make your every day
+ live of thesis writing a lot simpler:
+\end_layout
+
+\begin_layout Itemize
+Reliable image and table handling
+\end_layout
+
+\begin_layout Itemize
+Reliable list handling (list of figures, tables as well as contents)
+\end_layout
+
+\begin_layout Itemize
+Reliable cross reference handling
+\end_layout
+
+\begin_layout Itemize
+Reliable footnote handling
+\end_layout
+
+\begin_layout Itemize
+Reliable cite and bibliography handling
+\end_layout
+
+\begin_layout Itemize
+Reliable PDF generation
+\end_layout
+
+\begin_layout Standard
+You are advised to use the following freely available and approved toolset.
+\end_layout
+
+\begin_layout Itemize
+LyX is a graphical front end to LaTex.
+ With LyX a lot of technical details of the very complex LaTeX toolsuite
+ is hidden.
+ You can use LyX almost like an Wordprocessor like MS Word or Open Office.
+ Nevertheless it provides all detail features of LaTeX if someone needs
+ it.
+ LyX runs on Linux/UNIX, Windows or Mac based systems.
+\end_layout
+
+\begin_layout Itemize
+LaTeX is a document markup language and document preparation system for
+ the TeX typesetting program.
+ TeX is a popular means by which to typeset complex mathematical formulae
+ or complex technical or academical texts; it has been noted as one of the
+ most sophisticated digital typographical systems in the world.
+ TeX is popular in academia, especially in mathematics, computer science,
+ economics, engineering, physics, statistics, and quantitative psychology.
+ LaTeX runs on Linux/UNIX, Windows or Mac based systems.
+\end_layout
+
+\begin_layout Itemize
+BibTeX is a reference management software for formatting lists of references.
+ The BibTeX tool is typically used together with the LaTeX document preparation
+ system.
+ BibTeX makes it easy to cite sources in a consistent manner, by separating
+ bibliographic information from the presentation of this information, similarly
+ to the separation of content and presentation/style supported by LaTeX
+ itself.
+ BibTex runs on Linux/UNIX, Windows or Mac based systems.
+\end_layout
+
+\begin_layout Itemize
+Like LyX for LaTeX there exist a lot of front ends for BibTeX which help
+ you to manage your references beyond a text file basis.
+ Most popular BibTeX front end which is supported by Linux/UNIX, Windows
+ or Mac systems is JabRef (which is a java implementation).
+\end_layout
+
+\begin_layout Standard
+You find all necessary links for the above mentioned toolsuite in the following
+ table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:A-proper-TeX"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="25col%">
+<column alignment="center" valignment="top" width="60col%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Tool
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Description
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Download-URL
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LyX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LaTeX Front End
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+http://www.lyx.org/Download (Linux/UNIX, Windows, Mac)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LaTeX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TeX based typesetting program (BibTeX is included)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+http://miktex.org/2.9/setup (Windows)
+\end_layout
+
+\begin_layout Plain Layout
+http://www.tug.org/mactex/2011/ (Mac)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JabRef
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Java Based Reference Manager for the BibTeX System
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+http://jabref.sourceforge.net/ (Linux/UNIX, Windows, Mac)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+A proper TeX Toolsuite
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:A-proper-TeX"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Citing and referencing advices
+\end_layout
+
+\begin_layout Section
+Text structuring advices
+\end_layout
+
+\begin_layout Section
+How to embed tables and figures
+\end_layout
+
+\begin_layout Standard
+Tables are primarilly used for presenting data in a structured way.
+ Nevertheless a table should never exist in a text without a reflecting
+ context paragraph.
+\end_layout
+
+\begin_layout Standard
+Figures are primarilly used for presenting data or complex aspects, relations,
+ structures, etc.
+ in a graphical way.
+ A figure should never exist in a text without a reflecting context paragraph
+ describing the intent and key information of the figure in words.
+ In computer science and software modeling contexts these figures are often
+ forms of UML diagrams.
+ Nevertheless the here mentioned advices are relevant for all kind of figures.
+\end_layout
+
+\begin_layout Standard
+Be aware of the following points:
+\end_layout
+
+\begin_layout Itemize
+Number tables and figures.
+ You should use the in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ mentioned word processor table and figure handling features to handle this
+ automatically and frictionless.
+\end_layout
+
+\begin_layout Itemize
+Provide lost of tables and figures.
+ You should use the in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ mentioned word processor features to handle this automatically and frictionless.
+\end_layout
+
+\begin_layout Itemize
+Every embedded table or figure should be reflected and referenced from the
+ written and surrounding text.
+ You should use the in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ mentioned word processor table and image embedding and referencing features
+ to handle this automatically and frictionless.
+\end_layout
+
+\begin_layout Itemize
+You should embed every table and figure in the same style (e.g.
+ all tables and figures left-, right-adjusted or all centered, font-style
+ and font-sizes in all tables the same, etc.).
+\end_layout
+
+\begin_layout Standard
+Here are two examples how to embed and reference tables and figures within
+ a text.
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Grade-scale-of"
+
+\end_inset
+
+ shows the grade scale of the last Object Oriented Programming exam.
+ Only two students failed but most of them showed an astonishing good performanc
+e.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="12">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Grade
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+3.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+4.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+5.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Grade scale of last OOP exam
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Grade-scale-of"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Model-View-Controller"
+
+\end_inset
+
+ shows the general pattern of a Model View Controller (MVC) pattern, which
+ is used in software engineering to separate user interface aspects from
+ data handling (model) aspects in order to provide well structured as well
+ as adaptable code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename mvc.jpg
+	width 66col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Model View Controller Pattern
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Model-View-Controller"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Literature Research and Requirements Analysis
+\end_layout
+
+\begin_layout Standard
+Within this chapter you should reflect your task description and formulate
+ key aspects in order to derive necessary requirements which are vital for
+ the ongoing guidance of your software modeling and implementation steps.
+\end_layout
+
+\begin_layout Standard
+In some cases it might be usefull to seperate literature research and requiremen
+ts analysis in two distinct chapters.
+ This might be an appropriate strategy for a literature research intensive
+ thesis.
+ For most bachelor or diploma thesis with a clear software implementation
+ focus the provided template structure might be sufficient.
+\end_layout
+
+\begin_layout Standard
+If you use special requirements engineering techniques like use cases you
+ should explain the key concepts of the technique from a general point of
+ view (provide references to your sources) and provide reasons why this
+ technique is appropriate for your problem.
+\end_layout
+
+\begin_layout Standard
+Be aware of plagiarism:
+\end_layout
+
+\begin_layout Itemize
+You should keep an eye on your references.
+\end_layout
+
+\begin_layout Itemize
+Do not copy word by word.
+ If you do - this might be usefull in some cases - mark these parts clearly
+ as cites.
+\end_layout
+
+\begin_layout Itemize
+Use the citing features of the in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ mentioned word processors to handle this automatically and frictionless.
+\end_layout
+
+\begin_layout Chapter
+System Architecture and/or High Level Software Design
+\end_layout
+
+\begin_layout Chapter
+Software Architecture and/or Low Level Software Component Design
+\end_layout
+
+\begin_layout Chapter
+Implementation Description
+\end_layout
+
+\begin_layout Chapter
+Test and Evaluation
+\end_layout
+
+\begin_layout Chapter
+Conclusions and Outlook
+\end_layout
+
+\begin_layout Chapter*
+Appendix I
+\end_layout
+
+\begin_layout Standard
+If you want to provide detailled information to some aspects, e.g.
+ detailled configuration options.
+ You should describe the main and key aspects within your thesis document
+ and reference all additional details to an appropriate appendix section.
+ So you can keep your text well structured, understandable and readable
+ as well as provide all necessary details.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "literature"
+options "alpha"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
