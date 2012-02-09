@@ -4,7 +4,37 @@
 \begin_header
 \textclass book
 \begin_preamble
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage{babel} 
 
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\lstset{
+    language=JAVA,
+    float=hbp,%
+    basicstyle=\ttfamily\small, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+    backgroundcolor=\color{hellgrau}, %
+    breakautoindent=true, %
+    captionpos=b%
+}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -80,7 +110,7 @@ Template for Bachelor, Master or Diploma Thesis
 \end_layout
 
 \begin_layout Author
-John Doe
+YOUR NAME
 \end_layout
 
 \begin_layout Author
@@ -125,7 +155,7 @@ Only the given sources have been used for the writing of the diploma thesis.
 \end_layout
 
 \begin_layout Standard
-I agree that my work is published , in particular that the work is presented
+I agree that my work is published, in particular that the work is presented
  to third parties for inspection or copies of the work are made to pass
  on to third parties.
 \end_layout
@@ -302,7 +332,7 @@ I
 \end_layout
 
 \begin_layout Section
-Use word processors which are common in science
+Use typesetting systems which are common in academia
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Use-word-processors"
@@ -341,6 +371,10 @@ Reliable cross reference handling
 
 \begin_layout Itemize
 Reliable mathematical formula handling
+\end_layout
+
+\begin_layout Itemize
+Reliable source code handling
 \end_layout
 
 \begin_layout Itemize
@@ -616,8 +650,8 @@ name "tab:A-proper-TeX"
 \end_layout
 
 \begin_layout Standard
-If you plan to use the above mentioned toolsuite this LyX template file
- can be accessed via GitHub (
+If you plan to use the above mentioned toolsuite this template file can
+ be accessed as a LyX file via GitHub (
 \family typewriter
 https://github.com/nkratzke/BAMA-Template
 \family default
@@ -627,6 +661,13 @@ https://github.com/nkratzke/BAMA-Template
 
 \begin_layout Section
 Citing and referencing advices
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Citing-and-referencing"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -706,10 +747,24 @@ http://rescomp.stanford.edu/~cheshire/EinsteinQuotes.html
 
 \begin_layout Section
 Text structuring advices
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Text-structuring-advices"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 How to embed and reference tables and figures
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:How-to-embed"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -748,7 +803,7 @@ reference "sec:Use-word-processors"
 \end_layout
 
 \begin_layout Itemize
-Provide lost of tables and figures.
+Provide list of tables and figures.
  You should use the in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1185,14 +1240,273 @@ name "fig:Model-View-Controller"
 
 \end_layout
 
+\begin_layout Section
+How to handle source code
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:How-to-handle"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You will likely write a lot of code.
+ But most of the code will not appear in your thesis document.
+ Some crucial parts of your code might be referenced in an appendix or maybe
+ in an implementation (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-Description"
+
+\end_inset
+
+) or test chapter (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Test-and-Evaluation"
+
+\end_inset
+
+) if they are essential for understanding.
+ Nevertheless you should embed as less source code as possible in your thesis
+ document.
+\end_layout
+
+\begin_layout Standard
+But if you need to (and you will typically in an implementation intensive
+ thesis), you should do this by using special LaTeX packages.
+ This template file provided via GitHub
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family typewriter
+https://github.com/nkratzke/BAMA-Template
+\end_layout
+
+\end_inset
+
+ embeds the 
+\family typewriter
+listings
+\family default
+ package
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+You can find intial documentation here: 
+\family typewriter
+http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\end_layout
+
+\end_inset
+
+ for these purposes and configures .
+\end_layout
+
+\begin_layout Standard
+This package provides source code snippets like in Listing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{listing}
+\end_layout
+
+\end_inset
+
+ in the following style:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=JAVA,caption={Another Hello World App},label=listing}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+public class HelloWorld {
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	/**
+\end_layout
+
+\begin_layout Plain Layout
+
+	 * This is the main method where all begins
+\end_layout
+
+\begin_layout Plain Layout
+
+	 */
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("Hello, you have passed the following parameters:");
+\end_layout
+
+\begin_layout Plain Layout
+
+		for(String a : args) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			System.out.println(a);
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In LyX you have to open a TeX section and insert the following:
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lstset{language=JAVA,caption={Another Hello World App},label=listing}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout LyX-Code
+public class HelloWorld {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+/**
+\end_layout
+
+\begin_layout LyX-Code
+ * This is the main method where all begins
+\end_layout
+
+\begin_layout LyX-Code
+ */
+\end_layout
+
+\begin_layout LyX-Code
+public static void main(String[] args) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+System.out.println("Hello, you have passed the following parameters:");
+\end_layout
+
+\begin_layout LyX-Code
+for(String a : args) {
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+System.out.println(a);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+}
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+end{lstlisting}
+\end_layout
+
+\begin_layout Standard
+	
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
 \begin_layout Chapter
 Literature Research and Requirements Analysis
 \end_layout
 
 \begin_layout Standard
 Within this chapter you should reflect your task description and formulate
- key aspects in order to derive necessary requirements which are vital for
- the ongoing guidance of your software modeling and implementation steps.
+ key aspects in order to derive necessary requirements which might be essential
+ for the ongoing guidance of your software modeling and implementation steps.
 \end_layout
 
 \begin_layout Standard
@@ -1212,7 +1526,7 @@ If you use special requirements engineering techniques like use cases you
 \end_layout
 
 \begin_layout Standard
-Be aware of plagiarism:
+Be aware of:
 \end_layout
 
 \begin_layout Itemize
@@ -1222,7 +1536,14 @@ You should keep an eye on your references.
 \begin_layout Itemize
 Do not copy word by word.
  If you do - this might be usefull in some cases - mark these parts clearly
- as cites.
+ as cites or quotes (check section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Citing-and-referencing"
+
+\end_inset
+
+ how to do that).
 \end_layout
 
 \begin_layout Itemize
@@ -1233,23 +1554,73 @@ reference "sec:Use-word-processors"
 
 \end_inset
 
- mentioned word processors to handle this automatically and frictionless.
+ mentioned typesetting systems to handle this automatically and frictionless.
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
 \end_layout
 
 \begin_layout Chapter
-System Architecture and/or High Level Software Design
+System Architecture
 \end_layout
 
 \begin_layout Chapter
-Software Architecture and/or Low Level Software Component Design
+Software Architecture and/or Inner Software/Data Component Design
 \end_layout
 
 \begin_layout Chapter
 Implementation Description
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Implementation-Description"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
+\end_layout
+
+\begin_layout Chapter
+{Plugin Development}
+\end_layout
+
+\begin_layout Standard
+This chapter is defenitely an optional chapter and only necessary if a thesis
+ deals with extandable (plugin) software.
+ In this case this chapter should reflect ...
 \end_layout
 
 \begin_layout Chapter
 Test and Evaluation
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Test-and-Evaluation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
