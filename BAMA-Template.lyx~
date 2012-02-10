@@ -843,7 +843,7 @@ jump
 
  between chapters, sections and paragraphs of your thesis document.
  Typically you will develop and describe your solution step by step: Requirement
-s, high level archictecture, low level architecture, test and evaluation.
+s, high level architecture, low level architecture, test and evaluation.
  Each of these steps should be described in identifiable elements
 \begin_inset Foot
 status collapsed
@@ -950,7 +950,7 @@ reference "sub:Example:-How-to-cite"
 \begin_layout Itemize
 Word by word cites of small length: This is used if you want to repeat another
  authors statement of minor length exactly in the author words.
- If some words are ommitted this is marked by using the following sign [...].
+ If some words are omitted this is marked by using the following sign [...].
  You should provide the page where the cited paragraph can be found.
 \end_layout
 
@@ -1475,7 +1475,7 @@ good looking
 \begin_layout Itemize
 
 \series bold
-Do not overstructure your thesis
+Do not over structure your thesis
 \series default
  in depth.
  Set you a maximum level of section depth before you start writing.
@@ -1554,7 +1554,7 @@ reference "sub:Example:-How-to-reference"
 \series bold
 A headline stands never alone!
 \series default
- If you introduces a headline for 1.x which is directly followed by subheadlines
+ If you introduces a headline for 1.x which is directly followed by sub-headlines
  1.x.1, 1.x.2, ..., 1.x.n you should think about integrating the section 1.x.1 as introduct
 ion for the sections 1.x.2, 1.x.3, ..., 1.x.n into section 1.x.
 \end_layout
@@ -2185,7 +2185,7 @@ http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
 \end_layout
 
 \begin_layout Standard
-This package provides to emebd source code snippets like Listing 
+This package provides to embed source code snippets like Listing 
 \begin_inset ERT
 status open
 
@@ -3125,9 +3125,9 @@ name "chap:Summary,-Conclusions-and-Outlook"
 \end_layout
 
 \begin_layout Standard
-This is primarilly a recapitulating chapter.
+This is primarily a recapitulating chapter.
  Nevertheless -- beside your introduction chapter -- it is likely that it
- becomes the most readed part of your thesis.
+ becomes the most read part of your thesis.
  So do not underestimate your 
 \begin_inset Quotes eld
 \end_inset
@@ -3186,7 +3186,7 @@ reference "chap:Implementation-Description"
 
 \begin_layout Itemize
 describe extension points and principles of your solution in order to summarize
- how your solution can be extended (only if extentable, see chapter 
+ how your solution can be extended (only if extendable, see chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:{Extensibility}"
@@ -3233,16 +3233,16 @@ Do not assume any background knowledge from the reader (like in the introduction
 \begin_layout Itemize
 After you have finished you this chapter you should think about a complete
  rework of your introduction chapter in order to get both deeply aligned.
- Remember the introduction and this summary chapter are the most readed
- chapters of your thesis.
+ Remember the introduction and this summary chapter are the most read chapters
+ of your thesis.
  They are little bit like a business card of yours.
 \end_layout
 
 \begin_layout Standard
-And finally: May be you want provide an additional foreword? Or some ackknowledg
-ements in own sections? This would give your thesis a personal touch and
- would enable to express your gratitude to persons who had significant intellect
-ual impact to your thesis or supported you in a mentionable manner.
+And finally: May be you want provide an additional foreword? Or some acknowledgm
+ents in own sections? This would give your thesis a personal touch and would
+ enable to express your gratitude to persons who had significant intellectual
+ impact to your thesis or supported you in a mentionable manner.
 \end_layout
 
 \begin_layout Chapter*
