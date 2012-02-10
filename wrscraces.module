@@ -1,0 +1,128 @@
+<?php
+/**
+ * Implementation of hook_menu().
+ */
+function wrscraces_menu() {
+  $items = array();
+
+  $items['wrsc/racemap'] = array(
+    'title' => 'WRSC Races',
+    'description' => 'Presents WRSC Races on a googlemap',
+    'page callback' => 'wrscraces_map_menucallback',
+    'page arguments' => array(),
+    'access arguments' => array('access map'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+    
+  $items['admin/wrscraces/settings'] = array(
+    'title' => 'WRSC Admin',
+    'description' => 'Setting up the worldserver for WRSC Races',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('wrscraces_settings_form'),
+    'access arguments' => array('admin world server access'),
+  );
+
+  return $items;
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function wrscraces_perm() {
+  return array('admin world server access', 'access map');
+}
+
+/** 
+ * Helper Function to embed javascript
+ * in a more convenient way
+ */
+function _wrscraces_embed_script($path) {
+  $START = '<script type="text/javascript" src="';
+  $END = '"></script>';
+	drupal_set_html_head($START.$path.$END);
+}
+
+/**
+ * Embeds a google map with WRSC races
+ */
+function wrscraces_map_menucallback() {
+  
+  _wrscraces_embed_script("http://maps.google.com/maps/api/js?sensor=true");
+  _wrscraces_embed_script("/".drupal_get_path('module', 'wrscraces').'/js/updatewrscmap.js');
+  
+  $lat = variable_get('wrsc.center.lat', 0);
+  $lng = variable_get('wrsc.center.lng', 0);
+  
+  $out = "<div id='wrscrace_map_canvas' style='width:100%; height:600px'></div>\n";
+  $out .= "<script type='text/javascript'>wrsc_initialize($lat, $lng);</script>\n";
+
+  return $out;
+}
+
+/**
+ * Form for setting up the center position of the race area
+ */
+function wrscraces_settings_form() {
+	$form['wrsc_settings'] = array(
+		"#type" => "fieldset",
+		"#title" => t("WRSC Center Position")
+	);
+	
+	$form['wrsc_settings']['lat'] = array(
+		'#type' => 'textfield',
+		'#title' => t('latitude'),
+		'#size' => 10,
+		'#default_value' => variable_get('wrsc.center.lat', 0),
+		'#maxlength' => 20,
+		'#description' => t("Geographic	latitude, e.g. 53.8725"),
+	);
+
+	$form['wrsc_settings']['lng'] = array(
+		'#type' => 'textfield',
+		'#title' => t('longitude'),
+		'#size' => 10,
+		'#default_value' => variable_get('wrsc.center.lng', 0),
+		'#maxlength' => 20,
+		'#description' => t("Geographic	longitude, e.g. 10.7045"),
+	);
+
+	$form['wrsc_settings']['submit'] = array(
+		'#type' => 'submit',
+		'#value' => t('Set WRSC Race Area Center'),
+	);
+
+	return $form;
+}
+
+/**
+ * Validate hook for wrsc_settings_form
+ * Will be executed whenever the settings form is submitted
+ */
+function wrscraces_settings_form_validate($form, &$form_state) {	
+	$lat = $form_state['values']['lat'];
+	$lng = $form_state['values']['lng'];
+	
+	if (!is_numeric($lat)) form_set_error('', t('Please provide a numeric value for latitude')." not $lat");
+	if (!is_numeric($lng)) form_set_error('', t('Please provide a numeric value for longitude')." not $lng");
+	
+	if ($lat > 90.0 || $lat < -90.0) form_set_error('', t('Please provide a numeric value for latitude between -90.0 and +90.0'));
+	if ($lng > 180.0 || $lng < -180.0) form_set_error('', t('Please provide a numeric value for latitude between -180.0 and +180.0'));
+}
+
+/**
+ * Submit hook for wrsc_settings_form
+ * Will be executed whenever the settings form is validated without errors
+ * Stores the center of race area into the persistent variables
+ * wrsc.center.phi
+ * wrsc.center.lambda
+ */
+function wrscraces_settings_form_submit($form, &$form_state) {
+	$lat = $form_state['values']['lat'];
+	$lng = $form_state['values']['lng'];
+
+	variable_set('wrsc.center.lat', $lat);
+	variable_set('wrsc.center.lng', $lng);
+
+	drupal_set_message(t('WRSC Racing Area is set to ')."lat: $lat lng: $lng");
+}
+?>

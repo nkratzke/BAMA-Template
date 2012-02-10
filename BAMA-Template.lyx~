@@ -82,7 +82,7 @@
 \rightmargin 3cm
 \bottommargin 2cm
 \secnumdepth 3
-\tocdepth 3
+\tocdepth 2
 \paragraph_separation skip
 \defskip medskip
 \quotes_language english
@@ -223,24 +223,145 @@ LatexCommand tableofcontents
 
 \begin_layout Chapter
 Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Introduction"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 This document provides some general advices and requirements which should
  be regarded while writing a bachelor, master or diploma thesis with a clear
- focus on computer science -- especially implementating or programming --
+ focus on computer science -- especially implementing or programming --
  related topics.
- The here mentioned structures, advices and hints are recommendations and
+ If you have to deal with a complete other domain maybe the general advices
+ of this template are of some interest for you.
+ But it is very likely that all aspects described in the chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+ and following are only of minor or even no interest for you -- especially
+ if you have no software specific problem to solve.
+\end_layout
+
+\begin_layout Standard
+The here mentioned structures, advices and hints are recommendations and
  do not have to be followed word by word in a dogmatic interpretation.
- Each thesis has special aspects making it maybe necessary to differ in
- minor or major parts from this template.
+ Each thesis has special aspects making it necessary to differ in minor
+ or major aspects from this template.
  Nevertheless all formulated advices of this template shall help you writing
- a well structured as well as understandable bachelor, master or diploma
+ a well structured, understandable and traceable bachelor, master or diploma
  thesis.
+\end_layout
+
+\begin_layout Standard
+In the following this template provides general writing advices in section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:General-writing-advices"
+
+\end_inset
+
+ and additional hints how to write an introduction for your thesis document
+ (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Advices-to-introduce"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+The following chapters concentrate how to general structure a software intensive
+ bachelor, master or diploma thesis.
+ Therefor chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+ provides some tips for your initial literature research and requirements
+ analysis.
+ How to derive and structure a profound system architecture is described
+ in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+ gives advices how to use these system architecture outcomes to derive and
+ document your software as well as data architecture.
+ The documentation of your detail implementation is covered in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-Description"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:{Extensibility}"
+
+\end_inset
+
+ might be of interest for you, if you have to document extensible features
+ of your solution.
+ You can skip this chapter, if you do not have to deal with extensibility.
+ Some hints how to document your test and evaluation efforts can be found
+ in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Test-and-Evaluation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This template provides finally some additional hints how to summarize your
+ work, derive some conclusions of major relevance and provide an outlook
+ (if possible) in the last chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Summary,-Conclusions-and-Outlook"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 General writing advices
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:General-writing-advices"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -307,7 +428,7 @@ Never write sentences like:
 \begin_inset Quotes eld
 \end_inset
 
-I analysed requirements by applying use case modeling techniques.
+I analyzed requirements by applying use case modeling techniques.
 \begin_inset Quotes erd
 \end_inset
 
@@ -315,7 +436,7 @@ I analysed requirements by applying use case modeling techniques.
 \begin_inset Quotes eld
 \end_inset
 
-Requirements were analysed by applying use case modeling techniques.
+Requirements were analyzed by applying use case modeling techniques.
 \begin_inset Quotes erd
 \end_inset
 
@@ -331,7 +452,48 @@ I
  You are not writing a diary!
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+In the following sections you get some advices regarding the use of typesetting
+ systems used in academia (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:A-proper-TeX"
+
+\end_inset
+
+), how to cite and reference (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Citing-and-referencing"
+
+\end_inset
+
+), how to structure texts (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+), how to embed and reference tables and figures (section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:How-to-embed"
+
+\end_inset
+
+) and finally how to handle the documentation of source code (see section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:How-to-handle"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
 Use typesetting systems which are common in academia
 \begin_inset CommandInset label
 LatexCommand label
@@ -396,9 +558,9 @@ You are advised (but not forced) to use the following freely available and
 
 \begin_layout Itemize
 LyX is a graphical front end to LaTex.
- With LyX a lot of technical details of the very complex LaTeX toolsuite
+ With LyX a lot of technical details of the very complex LaTeX tool suite
  is hidden.
- You can use LyX almost like an Wordprocessor like MS Word or Open Office.
+ You can use LyX almost like an Word processor like MS Word or Open Office.
  Nevertheless it provides all detail features of LaTeX if someone needs
  it.
  LyX runs on Linux/UNIX, Windows or Mac based systems.
@@ -434,7 +596,7 @@ Like LyX for LaTeX there exist a lot of front ends for BibTeX which help
 \end_layout
 
 \begin_layout Standard
-You find all necessary links for the above mentioned toolsuite in the following
+You find all necessary links for the above mentioned tool suite in the following
  table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -625,7 +787,7 @@ http://jabref.sourceforge.net/
 \begin_inset Caption
 
 \begin_layout Plain Layout
-A proper TeX Toolsuite
+A proper TeX Tool suite
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:A-proper-TeX"
@@ -650,7 +812,7 @@ name "tab:A-proper-TeX"
 \end_layout
 
 \begin_layout Standard
-If you plan to use the above mentioned toolsuite this template file can
+If you plan to use the above mentioned tool suite this template file can
  be accessed as a LyX file via GitHub (
 \family typewriter
 https://github.com/nkratzke/BAMA-Template
@@ -659,7 +821,7 @@ https://github.com/nkratzke/BAMA-Template
  It should be a reliable starting point for your documentation process.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Citing and referencing advices
 \begin_inset CommandInset label
 LatexCommand label
@@ -670,16 +832,478 @@ name "sec:Citing-and-referencing"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+References are important for the reader because references enable to 
+\begin_inset Quotes eld
+\end_inset
+
+jump
+\begin_inset Quotes erd
+\end_inset
+
+ between chapters, sections and paragraphs of your thesis document.
+ Typically you will develop and describe your solution step by step: Requirement
+s, high level archictecture, low level architecture, test and evaluation.
+ Each of these steps should be described in identifiable elements
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Chapter, section, paragraph, appendix, etc.
+\end_layout
+
+\end_inset
+
+ of your thesis document.
+ But these elements can not be seen isolated.
+ They depend on each other and can not be seen as linear elements.
+ To make this obvious for the reader you should use so called forward and
+ backward references.
+\end_layout
+
+\begin_layout Standard
+A forward reference 
+\begin_inset Quotes eld
+\end_inset
+
+points
+\begin_inset Quotes erd
+\end_inset
+
+ to a text element which is following the actual text element.
+ Forward references are used to provide a look ahead for the reader in order
+ to provide him some informations not already mentioned but which might
+ be of interest for him.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Example:-How-to-reference"
+
+\end_inset
+
+ shows you how to do this (and this is simultaneously a forward referencing
+ example).
+\end_layout
+
+\begin_layout Standard
+A backward reference 
+\begin_inset Quotes eld
+\end_inset
+
+points
+\begin_inset Quotes erd
+\end_inset
+
+ to a text element which stands before the actual paragraph.
+ Forward references are used to remind the reader that something has been
+ already described in your thesis in order to provide him some summarizing
+ facts of these paragraphs which might be of interest for him in order to
+ understand the actual paragraph better.
+ For (forward as well as backward) referencing it is a good strategy to
+ use the referencing features of academical typesetting systems which has
+ been already mentioned in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ (and this is simultaneously a backward referencing example).
+\end_layout
+
+\begin_layout Standard
+So references are used to provide guidance within your own thesis document
+ and your own thoughts.
+ Nevertheless you have to deal with other form of sources in your thesis.
+ You will use books, articles, websites, etc.
+ in order to collect and reflect necessary knowledge/facts from other authors
+ publications.
+ To use their ideas or texts in an unmarked way is called plagiarism and
+ will make you fail! It is therefore common academical practice to use their
+ publications but mark every idea which originating in other authors publication
+s.
+ Especially your complete literature research (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+) depends on this principle.
+\end_layout
+
+\begin_layout Standard
+You should distinct cites and quotes.
+ A cite is the typical form referencing an external publication and has
+ to be enlisted in the bibliography of your thesis.
+ We can distinct several forms of citing.
+ All of them are shown by example in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Example:-How-to-cite"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Word by word cites of small length: This is used if you want to repeat another
+ authors statement of minor length exactly in the author words.
+ If some words are ommitted this is marked by using the following sign [...].
+ You should provide the page where the cited paragraph can be found.
+\end_layout
+
+\begin_layout Itemize
+non localizing cite: This is used if you want to refer generally to another
+ source where your ideas originate in but it is not possible to localize
+ a particular section, page or other identifiable element within this source.
+\end_layout
+
+\begin_layout Itemize
+localizing cite: This is used if you want to refer specifically to an identifiab
+le part of another source where your ideas originate in and it is possible
+ and of importance to provide the reader with the necessary information.
+ Nevertheless it is not important to reflect the authors ideas word by word.
+ You should provide the page where the cited paragraph can be found.
+ 
+\end_layout
+
+\begin_layout Standard
+A quote is a special form of a word by word cite of major relevance.
+ You use quotes to repeat some statements of another author with major relevance.
+ Often only the author is known but it was not published as a book, article,
+ etc..
+ You should handle quotes with care and use them with caution.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Example:-How-to-quote"
+
+\end_inset
+
+ shows some quoting examples.
+ If a quote can not be found in a referenceable publication it has not to
+ enlisted in the bibliography of your thesis.
+\end_layout
+
+\begin_layout Subsubsection
 Example: How to reference between sections
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Example:-How-to-reference"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+The referencing principle is made obvious by providing an so called outline
+ as an example.
+ An outline describes the general structure of a document in a summarizing
+ and forward referencing way.
+ The same works for backward referencing.
+ The very idea is not to provide only a chapter, section or subsection number
+ but also provide a very compact summary of the (forward or backward) referenced
+ passages.
+ The outline of this template for example could be the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+This template provides some general advices for writing diploma thesis in
+ chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Introduction"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+ provides some tips for your initial literature research and requirements
+ analysis.
+ How to derive and structure a profound system architecture is described
+ in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+ gives advices how to use these system architecture outcomes to derive and
+ document your software as well as data architecture.
+ The documentation of your detail implementation is covered in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-Description"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:{Extensibility}"
+
+\end_inset
+
+ might be of interest for you, if you have to document extensible features
+ of your solution .
+ You can skip this chapter, if you do not have to deal with extensibility.
+ Some hints how to document your test and evaluation efforts can be found
+ in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Test-and-Evaluation"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+This template provides additional hints how to summarize your work, derive
+ some conclusions of major relevance and provide an outlook (if possible)
+ in the last chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Summary,-Conclusions-and-Outlook"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Example: How to cite
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Example:-How-to-cite"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Here is a typical word by word cite example.
+ The detailed publication information can be found in the bibliography at
+ the very end of this template (and your thesis document) by using the key
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barr2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Barr defines the term 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+[...] cloud as a coherent, large-scale, publicly accessible collection of compute,
+ storage, and networking resources.
+ These are allocated via web service calls (a programmable interface accessed
+ via HTTP requests), and are available for short- or long-term use in exchange
+ for payment based on actual resources consumed.
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 5"
+key "Barr2010"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is a typical non localizing cite.
+ The detailed publication information can be found in the bibliography at
+ the very end of this template (and your thesis document) by using the key
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barr2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+The following considerations rely on Barrs 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barr2010"
+
+\end_inset
+
+ description how to use Amazon Web Services cloud assets to host scalable
+ web information systems.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here is a typical localizing cite in combination with non localizing cites.
+ The detailed publication information can be found in the bibliography at
+ the very end of this template (and your thesis document) by using the keys
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barr2010"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kratzke2011a"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kratzke2011b"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Barr mentions beside other use cases training, data storage, disaster recovery
+ and business continuity as well as business and scientific data processing
+ as economical interesting use cases 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 13 - 18"
+key "Barr2010"
+
+\end_inset
+
+.
+ This is also reflected by Kratzke 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kratzke2011a,Kratzke2011b"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Example: How to quote
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Example:-How-to-quote"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -697,6 +1321,20 @@ http://rescomp.stanford.edu/~cheshire/EinsteinQuotes.html
 
 :
 \end_layout
+
+\begin_layout Quote
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
 
 \begin_layout Quote
 
@@ -745,7 +1383,12 @@ http://rescomp.stanford.edu/~cheshire/EinsteinQuotes.html
  (Albert Einstein)
 \end_layout
 
-\begin_layout Section
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Text structuring advices
 \begin_inset CommandInset label
 LatexCommand label
@@ -756,7 +1399,185 @@ name "sec:Text-structuring-advices"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+This template provides a general structure of bachelor, master or diploma
+ thesis.
+ Nevertheless it provides 
+\begin_inset Quotes eld
+\end_inset
+
+only
+\begin_inset Quotes erd
+\end_inset
+
+ a top level structure.
+ The structure within the here mentioned chapters are up to you.
+ That is because every thesis is different in its details, every thesis
+ deals with other problems to solve and an appropriate documentation structure
+ depends mainly on the given (and thesis individual) problem domain.
+ Nevertheless there exist some tips how to structure readable and well structure
+d technical documentations.
+ Try to keep them in mind.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Describe only the necessary.
+
+\series default
+ Do not write sections because you think the mentioned facts are interesting.
+ Every section has to be reasonable from the problem point of view.
+ Your personal learning process has seldom something to do with the problem
+ domain.
+ So avoid to describe your learning process.
+ Nobody is interested in that.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Number your sections hierarchically.
+
+\series default
+ You should use the section handling features of an academical typesetting
+ system to do this comfortable and frictionless (remember section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Use-word-processors"
+
+\end_inset
+
+ how to do this).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Introduce sections and subsections if they are appropriate from a problem
+ point of view.
+
+\series default
+ You should never introduce a section because you think that a heading would
+ be 
+\begin_inset Quotes eld
+\end_inset
+
+good looking
+\begin_inset Quotes erd
+\end_inset
+
+.
+ A heading should always be reasonable from a problem or object description
+ point of view.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Do not overstructure your thesis
+\series default
+ in depth.
+ Set you a maximum level of section depth before you start writing.
+ A good depth would be three -- for exceptional cases you can use an additional
+ fourth section layer.
+ Try to keep this level across your complete thesis documentation.
+ If you recognize that you need additional section levels in one particular
+ chapter it is time to think about a restructure of this chapter or even
+ to split this chapter into two or more chapters.
+ Maybe you also have to think about to partition your thesis into several
+ main parts.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Do not introduce single subsections.
+
+\series default
+ If you introduce only one subsection in a section this subsection is useless!
+ Integrate it in your main section.
+ When ever you introduce a section 1.x.1 you should have also a section 1.x.2.
+ If not -- integrate 1.x.1 with 1.x.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Align your section structure to the structure of the described object.
+
+\series default
+ For example if you introduced a system architecture with five major building
+ blocks on the same system level you could introduce five corresponding
+ sections to describe them.
+ Each section should document exactly one building block.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Use references to document dependencies
+\series default
+ between described objects.
+ If the described objects have dependencies you should reflect this between
+ your corresponding sections as well (see section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Citing-and-referencing"
+
+\end_inset
+
+ how to reference efficiently).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Provide mini outlines for complex sections.
+
+\series default
+ If sections are getting long and complex it is a good strategy to provide
+ a starting mini outline reflecting the subsections 1.x.y of the main section
+ 1.x (remember section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Example:-How-to-reference"
+
+\end_inset
+
+ how to do this).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+A headline stands never alone!
+\series default
+ If you introduces a headline for 1.x which is directly followed by subheadlines
+ 1.x.1, 1.x.2, ..., 1.x.n you should think about integrating the section 1.x.1 as introduct
+ion for the sections 1.x.2, 1.x.3, ..., 1.x.n into section 1.x.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Use appendices to handle details.
+
+\series default
+ If details are necessary you should describe the general and essential
+ in the main document and reference a corresponding appendices section (see
+ also 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Appendix-I"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection
 How to embed and reference tables and figures
 \begin_inset CommandInset label
 LatexCommand label
@@ -768,13 +1589,14 @@ name "sec:How-to-embed"
 \end_layout
 
 \begin_layout Standard
-Tables are primarilly used for presenting data in a structured way.
+Tables are primarily used for presenting data in a structured way.
  Nevertheless a table should never exist in a text without a reflecting
- context paragraph.
+ context paragraph giving some additional information about the presented
+ data.
 \end_layout
 
 \begin_layout Standard
-Figures are primarilly used for presenting data or complex aspects, relations,
+Figures are primarily used for presenting data or complex aspects, relations,
  structures, etc.
  in a graphical way.
  A figure should never exist in a text without a reflecting context paragraph
@@ -848,15 +1670,50 @@ Keep your figures and tables readable.
 \end_layout
 
 \begin_layout Standard
-Here are two examples how to embed and reference tables and figures within
+Sections 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sub:Example:-How-to-embed-a-table"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "sub:Example:-How-to-embed-a-figure"
+
+\end_inset
+
+ show two examples how to embed and reference tables and figures within
  a text.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Example: How to embed and reference a table
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Example:-How-to-embed-a-table"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -869,7 +1726,7 @@ reference "tab:Grade-scale-of"
 e.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
@@ -1163,7 +2020,8 @@ name "tab:Grade-scale-of"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -1172,11 +2030,32 @@ name "tab:Grade-scale-of"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Example: How to embed and reference a figure
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Example:-How-to-embed-a-figure"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1190,15 +2069,11 @@ reference "fig:Model-View-Controller"
  as adaptable code.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \noindent
@@ -1231,7 +2106,8 @@ name "fig:Model-View-Controller"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -1240,7 +2116,7 @@ name "fig:Model-View-Controller"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 How to handle source code
 \begin_inset CommandInset label
 LatexCommand label
@@ -1277,7 +2153,7 @@ reference "chap:Test-and-Evaluation"
 \begin_layout Standard
 But if you need to (and you will typically in an implementation intensive
  thesis), you should do this by using special LaTeX packages.
- This template file provided via GitHub
+ The LyX template file provided via GitHub
 \begin_inset Foot
 status open
 
@@ -1298,7 +2174,7 @@ listings
 status open
 
 \begin_layout Plain Layout
-You can find intial documentation here: 
+You can find initial documentation here: 
 \family typewriter
 http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
 \end_layout
@@ -1309,7 +2185,7 @@ http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
 \end_layout
 
 \begin_layout Standard
-This package provides source code snippets like in Listing 
+This package provides to emebd source code snippets like Listing 
 \begin_inset ERT
 status open
 
@@ -1420,7 +2296,8 @@ end{lstlisting}
 \end_layout
 
 \begin_layout Standard
-In LyX you have to open a TeX section and insert the following:
+To use this in LyX you have to open a TeX section and insert the following
+ TeX commands:
 \end_layout
 
 \begin_layout LyX-Code
@@ -1492,6 +2369,95 @@ end{lstlisting}
 \end_layout
 
 \begin_layout Standard
+It is also possible to embed complete source code listings by referencing
+ the source code file.
+ This is shown in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "chap:Appendix-I"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Advices to introduce your thesis
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Advices-to-introduce"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Within your introduction chapter you should 
+\end_layout
+
+\begin_layout Itemize
+provide some general information of your problem domain,
+\end_layout
+
+\begin_layout Itemize
+provide some overview information of your thesis and how your thesis embeds
+ in the problem domain overview,
+\end_layout
+
+\begin_layout Itemize
+describe some innovative aspects or approaches of your work in comparison
+ to other publications/solutions in this field,
+\end_layout
+
+\begin_layout Itemize
+and reflect your thesis task description (or statement of work).
+\end_layout
+
+\begin_layout Standard
+In alignment with your thesis task description you should finally develop
+ an general outline of your thesis document which helps the reader to understand
+ the general structure of your thesis.
+ Therefore the outline should provide an overview of the ongoing chapters
+ of your thesis (see section how to write an efficient outline 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Example:-How-to-reference"
+
+\end_inset
+
+).
+ Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for the introduction
+ chapter.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Do not provide to much details in the introduction chapter.
+\end_layout
+
+\begin_layout Itemize
+Do not assume any background knowledge from the reader in the introduction
+ chapter.
+\end_layout
+
+\begin_layout Itemize
+It is very likely that your introduction chapter changes more than ones.
+ A good strategy is to write your introduction in the very beginning and
+ write it in the finalizing phase completely new!
+\end_layout
+
+\begin_layout Standard
 	
 \end_layout
 
@@ -1511,18 +2477,19 @@ name "chap:Literature-Research-and"
 \end_layout
 
 \begin_layout Standard
-Within this chapter you should reflect your task description and formulate
- key aspects in order to derive necessary requirements which might be essential
+Within this chapter you should reflect your task description as well as
+ the state of the art formulated in literature to formulate key aspects
+ in order to derive and refine necessary requirements which might be essential
  for the ongoing guidance of your software modeling and implementation steps.
 \end_layout
 
 \begin_layout Standard
-In some cases it might be usefull to seperate literature research and requiremen
-ts analysis in two distinct chapters.
+In some cases it might be useful to separate literature research and requirement
+s analysis in two distinct chapters.
  This might be an appropriate strategy for a literature research intensive
  thesis.
  For most bachelor or diploma thesis with a clear software implementation
- focus the provided template structure might be sufficient.
+ focus the provided template structure should be sufficient.
 \end_layout
 
 \begin_layout Standard
@@ -1542,7 +2509,7 @@ You should keep an eye on your references.
 
 \begin_layout Itemize
 Do not copy word by word.
- If you do - this might be usefull in some cases - mark these parts clearly
+ If you do - this might be useful in some cases - mark these parts clearly
  as cites or quotes (check section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1573,6 +2540,18 @@ reference "sec:Text-structuring-advices"
 \end_inset
 
  in order to find an appropriate section structure for this chapter.
+\end_layout
+
+\begin_layout Itemize
+You should align the structure of this section more or less to the statement
+ of work of your thesis you have already reflected in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Introduction"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
@@ -1648,7 +2627,7 @@ You should keep an eye on your references -- especially when deriving your
 
 \begin_layout Itemize
 Do not copy word by word.
- If you do - this might be usefull in some cases - mark these parts clearly
+ If you do - this might be useful in some cases - mark these parts clearly
  as cites or quotes (check section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1737,7 +2716,7 @@ Whenever you have made architectural decisions influencing your solution
 \end_layout
 
 \begin_layout Standard
-If you use special software modeling techniques like UML, ERM, etc.
+If you use special software or data modeling techniques like UML, ERM, etc.
  you should explain the key concepts of these techniques from a general
  point of view (provide references to your sources) and provide reasons
  why this technique is appropriate for your special component problem and
@@ -1838,14 +2817,33 @@ If you use different programming languages like JAVA, Python, C, C++, Haskell,
  you should explain the key programming paradigms of these programing languages
  from a general point of view (provide references to your sources) and provide
  reasons why you used which language for which component.
- You should also describe how you regarded architecture principles on implementa
-tion level.
+ You should also describe how do you have handled architecture principles
+ on implementation level.
  
 \end_layout
 
 \begin_layout Standard
-You should concentrate on very special aspects which are crucial for your
- solution.
+If you use code generation techniques (e.g.
+ often GUI Builder use code generators -- it is not always obvious that
+ in some aspects code generation is involved!) you should explain the key
+ concepts of these techniques and describe how you applied these techniques
+ in order to solve your problem.
+ You should also reflect which artifacts are generated and whether these
+ generated artifacts have to be handled in a special manner -- especially
+ when you have to deal with round trip engineering and testing aspects (see
+ chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Test-and-Evaluation"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Furthermore you should concentrate in your implementation description on
+ very special aspects which are crucial for your solution.
  E.g.
  special algorithms, crucial interfaces, components of high criticality,
  interaction principles, etc.
@@ -1894,11 +2892,18 @@ reference "sec:How-to-handle"
 
 \begin_layout Chapter
 {Extensibility}
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:{Extensibility}"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-This chapter is defenitely an optional chapter and only necessary if a thesis
- deals with extandable (plugin) software.
+This chapter is definitely an optional chapter and only necessary if a thesis
+ deals with extendable (plugin) software.
  In this case this chapter should reflect how your software is extendable.
  If you do not provide a plugin or a similar concept this chapter can be
  skipped.
@@ -1913,7 +2918,7 @@ It is a good strategy to identify and describe the relevant extension points
 
 \begin_layout Standard
 I a second step you should demonstrate how your solution can be extended
- by a simple example in step by step howto/tutorial manner.
+ by a simple example in step by step how-to/tutorial manner.
 \end_layout
 
 \begin_layout Standard
@@ -1960,22 +2965,363 @@ name "chap:Test-and-Evaluation"
 
 \end_layout
 
-\begin_layout Chapter
-Conclusions and Outlook
-\end_layout
+\begin_layout Standard
+Within this chapter you should reflect your test and evaluation strategy
+ and provide corresponding test and evaluation results for your components
+ or responsibility in order to prove that you have fulfilled the guiding
+ requirements derived in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
 
-\begin_layout Chapter*
-Appendix I
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-If you want to provide detailled information to some aspects, e.g.
- detailled configuration options.
+Describe recurring principles of your test and evaluation strategy.
+ You should define criteria when you rate a test successful.
+ These criteria have to be derived by your requirements (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+), the system as well as the software architecture (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Maybe you have to develop a (small) test architecture -- especially when
+ you have to deal with test mocks and external interfaces which are not
+ belonging to your area of responsibility but are of crucial importance
+ for the system.
+\end_layout
+
+\begin_layout Standard
+If you use special test or evaluation techniques like unit testing, coverage,
+ acceptance testing, mocks, etc.
+ you should explain the key paradigms of these test and evaluation techniques
+ from a general point of view (provide references to your sources) and provide
+ reasons why you used which technique for which component/requirement.
+ You should also describe how you regarded the architecture influence on
+ test level.
+ 
+\end_layout
+
+\begin_layout Standard
+If you use code generation techniques (e.g.
+ GUI Builder use code generators) you should explain how these generated
+ code parts have been tested and why.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Regard the general text structuring advices in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Text-structuring-advices"
+
+\end_inset
+
+ in order to find an appropriate section structure for this chapter.
+ 
+\end_layout
+
+\begin_layout Itemize
+Your section structure should be aligned in some way to 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+your requirements (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+the components of your system (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+) as well as 
+\end_layout
+
+\begin_layout Itemize
+components of your responsibility (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+) in order to support readability, understandability as well as traceability.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Do not forget your interfaces (between components of your responsibility
+ but also between components of your and external responsibility) derivable
+ from chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+.
+ Your test strategy should also provide test results which proof that you
+ interact correctly with interfaces that do not belong to your responsibility.
+\end_layout
+
+\begin_layout Itemize
+Do not provide detailed source code in this section.
+ If you need to provide source code details of crucial relevance you should
+ do this according to section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:How-to-handle"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Summary, Conclusions and Outlook
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Summary,-Conclusions-and-Outlook"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is primarilly a recapitulating chapter.
+ Nevertheless -- beside your introduction chapter -- it is likely that it
+ becomes the most readed part of your thesis.
+ So do not underestimate your 
+\begin_inset Quotes eld
+\end_inset
+
+finishing
+\begin_inset Quotes erd
+\end_inset
+
+ chapter.
+ It is an absolutely essential chapter of your thesis.
+ You should 
+\end_layout
+
+\begin_layout Itemize
+summarize your major findings of your literature research and results of
+ your requirements analysis (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Literature-Research-and"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+reflect your overall architecture and guiding architecture principles (see
+ chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:System-Architecture"
+
+\end_inset
+
+), 
+\end_layout
+
+\begin_layout Itemize
+pinpoint highlights and advantages of your software architecture (see chapter
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Software-Architecture-and/or"
+
+\end_inset
+
+) and your implementation (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementation-Description"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+describe extension points and principles of your solution in order to summarize
+ how your solution can be extended (only if extentable, see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:{Extensibility}"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+summarize your test/evaluation strategy and your test/evaluation results
+ in context of your thesis requirements in order to emphasize your results
+ (see chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Test-and-Evaluation"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Finally you should draw some conclusions in order to show what your solution
+ is contributing to your problem context.
+ If you have developed ideas during your thesis realization which could
+ not be realized due to comprehensible or obvious reasons you could state
+ them here as an outlook.
+\end_layout
+
+\begin_layout Standard
+Be aware of:
+\end_layout
+
+\begin_layout Itemize
+Do not provide to much details in this chapter.
+\end_layout
+
+\begin_layout Itemize
+Do not assume any background knowledge from the reader (like in the introduction
+ chapter).
+\end_layout
+
+\begin_layout Itemize
+After you have finished you this chapter you should think about a complete
+ rework of your introduction chapter in order to get both deeply aligned.
+ Remember the introduction and this summary chapter are the most readed
+ chapters of your thesis.
+ They are little bit like a business card of yours.
+\end_layout
+
+\begin_layout Standard
+And finally: May be you want provide an additional foreword? Or some ackknowledg
+ements in own sections? This would give your thesis a personal touch and
+ would enable to express your gratitude to persons who had significant intellect
+ual impact to your thesis or supported you in a mentionable manner.
+\end_layout
+
+\begin_layout Chapter*
+Appendix I - Detailed Information Example
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Appendix-I"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you want to provide detailed information to some aspects, e.g.
+ detailed configuration options.
  You should describe the main and key aspects within your thesis document
  and reference all additional details to an appropriate appendix section.
  So you can keep your text well structured, understandable and readable
  as well as provide all necessary details.
  
+\end_layout
+
+\begin_layout Standard
+May be you want to embed a long source code like listing 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{wrscraces}
+\end_layout
+
+\end_inset
+
+ of crucial importance? This could be done in the following style
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lstset{caption={WRSC Races - A googlemap drupal module},label=wrscraces}
+ 
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+lstinputlisting[language=PHP]{wrscraces.module}
+\end_layout
+
+\begin_layout Standard
+and would produce the following output:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{caption={WRSC Races - A googlemap drupal module},label=wrscraces}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=PHP]{wrscraces.module}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
