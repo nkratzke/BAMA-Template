@@ -57,11 +57,20 @@
 \output_sync 0
 \bibtex_command bibtex
 \index_command default
-\float_placement H
+\float_placement tbh
 \paperfontsize 11
 \spacing single
-\use_hyperref false
-\papersize default
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
@@ -77,10 +86,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 3cm
+\leftmargin 2.5cm
 \topmargin 2cm
-\rightmargin 3cm
-\bottommargin 2cm
+\rightmargin 2cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation skip
@@ -606,7 +615,18 @@ reference "tab:A-proper-TeX"
 
  but it is also worth to check 
 \family typewriter
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.latex-project.org/
+\end_layout
+
+\end_inset
+
+
 \family default
 .
 \end_layout
@@ -615,7 +635,7 @@ http://www.latex-project.org/
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -684,7 +704,17 @@ LaTeX Front End
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.lyx.org/Download
+\end_layout
+
+\end_inset
+
+
 \family default
  (Linux/UNIX, Windows, Mac)
 \end_layout
@@ -717,7 +747,17 @@ TeX based typesetting program (BibTeX is included)
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.tug.org/protext/
+\end_layout
+
+\end_inset
+
+
 \family default
  (Windows)
 \end_layout
@@ -725,7 +765,17 @@ http://www.tug.org/protext/
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.tug.org/mactex/2011/
+\end_layout
+
+\end_inset
+
+
 \family default
  (Mac)
 \end_layout
@@ -735,7 +785,18 @@ You should use your package manager of your distribution in order to install
  all necessary LaTeX packages and dependencies.
  Otherwise check 
 \family typewriter
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://www.tug.org/texlive/
+\end_layout
+
+\end_inset
+
+
 \family default
  (Linux/UNIX)
 \end_layout
@@ -768,7 +829,17 @@ Java Based Reference Manager for the BibTeX System
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 http://jabref.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
 \family default
  (Linux/UNIX, Windows, Mac)
 \end_layout
@@ -815,7 +886,18 @@ name "tab:A-proper-TeX"
 If you plan to use the above mentioned tool suite this template file can
  be accessed as a LyX file via GitHub (
 \family typewriter
+
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
 https://github.com/nkratzke/BAMA-Template
+\end_layout
+
+\end_inset
+
+
 \family default
 ).
  It should be a reliable starting point for your documentation process.
@@ -1314,7 +1396,17 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
 http://rescomp.stanford.edu/~cheshire/EinsteinQuotes.html
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1567,9 +1659,9 @@ Use appendices to handle details.
 \series default
  If details are necessary you should describe the general and essential
  in the main document and reference a corresponding appendices section (see
- also 
+ appendix 
 \begin_inset CommandInset ref
-LatexCommand nameref
+LatexCommand ref
 reference "chap:Appendix-I"
 
 \end_inset
@@ -1672,14 +1764,14 @@ Keep your figures and tables readable.
 \begin_layout Standard
 Sections 
 \begin_inset CommandInset ref
-LatexCommand nameref
+LatexCommand ref
 reference "sub:Example:-How-to-embed-a-table"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
-LatexCommand nameref
+LatexCommand ref
 reference "sub:Example:-How-to-embed-a-figure"
 
 \end_inset
@@ -1700,20 +1792,6 @@ name "sub:Example:-How-to-embed-a-table"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
 Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1726,7 +1804,7 @@ reference "tab:Grade-scale-of"
 e.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -2025,11 +2103,6 @@ name "tab:Grade-scale-of"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Example: How to embed and reference a figure
 \begin_inset CommandInset label
@@ -2042,20 +2115,6 @@ name "sub:Example:-How-to-embed-a-figure"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
 Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2069,11 +2128,11 @@ reference "fig:Model-View-Controller"
  as adaptable code.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2095,11 +2154,6 @@ Model View Controller Pattern
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Model-View-Controller"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -2160,7 +2214,17 @@ status open
 \begin_layout Plain Layout
 
 \family typewriter
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
 https://github.com/nkratzke/BAMA-Template
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2176,7 +2240,18 @@ status open
 \begin_layout Plain Layout
 You can find initial documentation here: 
 \family typewriter
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
 http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2251,7 +2326,7 @@ public class HelloWorld {
 
 \begin_layout Plain Layout
 
-		System.out.println("Hello, you have passed the following parameters:");
+		System.out.println("Hello, I got the following parameters:");
 \end_layout
 
 \begin_layout Plain Layout
@@ -2335,7 +2410,7 @@ public static void main(String[] args) {
 
 \begin_deeper
 \begin_layout LyX-Code
-System.out.println("Hello, you have passed the following parameters:");
+System.out.println("Hello, I got the following parameters:");
 \end_layout
 
 \begin_layout LyX-Code
@@ -2371,9 +2446,9 @@ end{lstlisting}
 \begin_layout Standard
 It is also possible to embed complete source code listings by referencing
  the source code file.
- This is shown in 
+ This is shown in appendix 
 \begin_inset CommandInset ref
-LatexCommand nameref
+LatexCommand ref
 reference "chap:Appendix-I"
 
 \end_inset
@@ -3245,8 +3320,24 @@ ents in own sections? This would give your thesis a personal touch and would
  impact to your thesis or supported you in a mentionable manner.
 \end_layout
 
-\begin_layout Chapter*
-Appendix I - Detailed Information Example
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{appendix}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Detailed Information Example
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Appendix-I"
@@ -3325,10 +3416,26 @@ lstinputlisting[language=PHP]{wrscraces.module}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{appendix}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "literature"
-options "alpha"
+options "bibtotoc,alpha"
 
 \end_inset
 
