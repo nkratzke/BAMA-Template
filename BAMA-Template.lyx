@@ -108,7 +108,11 @@
 \begin_body
 
 \begin_layout Title
-Template for Bachelor, Master or Diploma Thesis
+How to write a Bachelor, Master, Diploma Thesis?
+\begin_inset Newline newline
+\end_inset
+
+Commented Template for Bachelor, Master or Diploma Thesis
 \end_layout
 
 \begin_layout Standard
@@ -119,7 +123,7 @@ Template for Bachelor, Master or Diploma Thesis
 \end_layout
 
 \begin_layout Author
-YOUR NAME
+Nane Kratzke (please replace it with your name)
 \end_layout
 
 \begin_layout Author
@@ -566,7 +570,7 @@ You are advised (but not forced) to use the following freely available and
 \end_layout
 
 \begin_layout Itemize
-LyX is a graphical front end to LaTex.
+LyX is a graphical front end to LaTeX.
  With LyX a lot of technical details of the very complex LaTeX tool suite
  is hidden.
  You can use LyX almost like an Word processor like MS Word or Open Office.
@@ -2256,7 +2260,8 @@ http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
 
 \end_inset
 
- for these purposes and configures .
+ for those purposes and is preconfigured properly.
+ You should use it.
 \end_layout
 
 \begin_layout Standard
