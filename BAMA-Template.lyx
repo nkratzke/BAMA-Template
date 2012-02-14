@@ -995,7 +995,7 @@ reference "sub:Example:-How-to-reference"
 
 \end_inset
 
- shows you how to do this (and this is simultaneously a forward referencing
+ shows how to do this (and this is simultaneously a forward referencing
  example).
 \end_layout
 
@@ -1010,12 +1010,12 @@ points
 
  to a text element which stands before the actual paragraph.
  Forward references are used to remind the reader that something has been
- already described in your thesis in order to provide him some summarizing
- facts of these paragraphs which might be of interest for him in order to
- understand the actual paragraph better.
+ already described in your thesis in order to provide some summarizing facts
+ of these paragraphs which might be of interest for him in order to understand
+ the actual paragraph better.
  For (forward as well as backward) referencing it is a good strategy to
- use the referencing features of academical typesetting systems which has
- been already mentioned in section 
+ use the referencing features of academical typesetting systems already
+ mentioned in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Use-word-processors"
