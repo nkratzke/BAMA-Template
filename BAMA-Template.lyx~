@@ -123,7 +123,7 @@ Commented Template for Bachelor, Master or Diploma Thesis
 \end_layout
 
 \begin_layout Author
-Nane Kratzke
+Nane Kratzke (please replace it with your name)
 \end_layout
 
 \begin_layout Author
@@ -259,8 +259,8 @@ reference "chap:Literature-Research-and"
 
 \end_inset
 
- and following are only of minor or even no relevance for you -- especially
- if you have no software specific problem to solve.
+ and following are only of minor relevance for you -- especially if you
+ have no software specific problem to solve.
 \end_layout
 
 \begin_layout Standard
@@ -274,8 +274,36 @@ The here mentioned structures, advices and hints are recommendations and
 \end_layout
 
 \begin_layout Standard
-In the following this template provides general writing advices in section
- 
+You should be aware that this template summarizes only some essential aspects
+ on technical writing.
+ It is recommended to account other sources on technical writing as well,
+ e.g.
+\end_layout
+
+\begin_layout Itemize
+Barrass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barrass91"
+
+\end_inset
+
+ (especially English speaking students) or
+\end_layout
+
+\begin_layout Itemize
+Rechenberg 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rechenberg2006"
+
+\end_inset
+
+ (especially German speaking students).
+\end_layout
+
+\begin_layout Standard
+This template provides general writing advices in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:General-writing-advices"
