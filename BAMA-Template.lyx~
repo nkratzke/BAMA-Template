@@ -4859,21 +4859,20 @@ name "chap:System-Architecture"
 \end_layout
 
 \begin_layout Standard
-Within this chapter you should reflect the overall architecture of your
- problem domain and describe it as a general guidance structure to your
- solution.
+Use this chapter to reflect about the overall architecture of your problem
+ domain and describe it as a general guidance structure to your solution.
  This might be the system and its interfaces you have to deal with (provide
  your sources you used to derive the system architecture).
  Or if the system architecture has to be developed you should use this chapter
- to document these steps and their relevant outcomes here.
- In both cases you should align the in chapter 
+ to document these steps and their relevant outcomes.
+ In both cases you should align the derived requirements (see chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Literature-Research-and"
 
 \end_inset
 
- derived requirements to the here presented system architecture.
+) to the here presented system architecture.
  Do not forget to mention or develop architecture principles (e.g.
  loose coupling, publish-subscriber pattern, etc.) providing guidance to
  all following software engineering steps.
@@ -4961,19 +4960,19 @@ Architecture Principles
 \end_layout
 
 \begin_layout Standard
-It is often possible to derive from your general design decisions (see section
- 
+It is often possible to derive concrete architecture principles (e.g.
+ loose coupling, publisher-subscriber pattern, layers, separation of concerns,
+ abstraction, modularity, traceability, etc.) from your general design decisions
+ (see section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:General-design-decisions"
 
 \end_inset
 
-) more concrete architecture principles (e.g.
- loose coupling, publisher-subscriber pattern, layers, separation of concerns,
- abstraction, modularity, traceability, etc.).
- If this is possible you should describe the relevant principles which are
- guiding your architecture development process.
+).
+ If this is possible you should describe the relevant principles as well
+ as their intents which are guiding your architecture development process.
  
 \end_layout
 
@@ -5074,7 +5073,14 @@ Example to provide a general system context
 \lang ngerman
 It is furthermoe a good idea to map your architecture elements to your software
  requirements in order to check the completeness of your architecture.
- This can be done by providing a simple mapping table shown in table.
+ This can be done by providing a simple mapping table shown in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Übersicht-der-Activity-Zuständig"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

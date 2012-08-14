@@ -5005,7 +5005,7 @@ To provide a general system understanding for the reader you typically have
  System architectures should describe the principal structure of your solution
  from general point of view.
  The system architecture should be able to visualize your part of responsibilty
- if you have to provide only components for a bigger system (this is very
+ if you have to provide only components for a bigger system (which is very
  often).
  Good system architectures can be developed by very primitive tools like
  Powerpoint.
@@ -5073,7 +5073,14 @@ Example to provide a general system context
 \lang ngerman
 It is furthermoe a good idea to map your architecture elements to your software
  requirements in order to check the completeness of your architecture.
- This can be done by providing a simple mapping table shown in table.
+ This can be done by providing a simple mapping table shown in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Übersicht-der-Activity-Zuständig"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
