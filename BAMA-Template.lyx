@@ -154,12 +154,12 @@ Germany
 \end_layout
 
 \begin_layout Section*
-Statement to the diploma thesis
+Statement to the bachelor, master or diploma thesis
 \end_layout
 
 \begin_layout Standard
-I assure that I have written the diploma thesis independently, without outside
- help.
+I assure that I have written the bachelor, master or diploma thesis independentl
+y, without outside help.
 \end_layout
 
 \begin_layout Standard
@@ -264,7 +264,14 @@ Let me especially thank
 \series bold
 Florian Hübner
 \series default
- who wrote an astonishing bachelor thesis in summer 2012.
+ who wrote an astonishing bachelor thesis in summer 2012 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+.
  A lot of examples are taken directly from his outstanding work.
  Thank you very much.
  It was a pleasure to work with him.
@@ -2710,7 +2717,14 @@ It is a good strategy to derive some key features of the to be developed,
  product features.
  It is very helpfull to refine these product features as a list of of identfiabl
 e feature entities.
- The following list is an example of a real world bachelor thesis.
+ The following list is an example of a real world bachelor thesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -2811,7 +2825,14 @@ Next step could be a more detailled software requirements analysis.
 It is absolutely essential that you derive a list of identifiable software
  requirements which can be listed in a form like this list here (
 \lang american
-The following list is an example of a real world bachelor thesis).
+The following list is an example of a real world bachelor thesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -4687,7 +4708,14 @@ name "tab:Übersicht-der-Produktfunktionen"
 
 \end_inset
 
-Example of feature to requirement mapping
+Example of feature to requirement mapping (according to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -4756,7 +4784,7 @@ feeling
 
 \lang ngerman
 \begin_inset Float figure
-placement tbh
+placement H
 wide false
 sideways false
 status open
@@ -4806,7 +4834,15 @@ name "fig:Several-illustrating-screenshots"
 
 \end_inset
 
-Example of several illustrating screenshots (here an Android application)
+Example of several illustrating screenshots (here an Android application,
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -5055,7 +5091,14 @@ name "fig:System--Kontext-Diagramm"
 
 \end_inset
 
-Example to provide a general system context
+Example to provide a general system context, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6933,7 +6976,14 @@ name "tab:Übersicht-der-Activity-Zuständig"
 
 \end_inset
 
-Example of architecture entities to requirements mapping
+Example of architecture entities to requirements mapping, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -7138,7 +7188,14 @@ name "fig:Struktureller-Aufbau-der"
 
 \end_inset
 
-Example how to present a very general software structure
+Example how to present a very general software structure, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -7519,7 +7576,14 @@ name "sec:Test-categories"
 
 \begin_layout Standard
 Your test strategy should derive several test categories.
- Example of test categories could be:
+ Example of test categories could be (taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+):
 \end_layout
 
 \begin_layout Itemize
@@ -7628,7 +7692,7 @@ reference "sec:Software-Architecture"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -15781,7 +15845,14 @@ name "tab:Tabellarische-Gegenüberstellung-tests aufgabenstellung"
 
 \end_inset
 
-Example of a test mapping
+Example of a test mapping, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -17543,7 +17614,14 @@ name "tab:Übersicht-der-Testergebnisse systemtest"
 
 \end_inset
 
-Example of a test result overlook
+Example of a test result overlook, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huebner2012"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
