@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass book
@@ -45,13 +45,13 @@
 \font_roman default
 \font_sans lmss
 \font_typewriter default
+\font_math auto
 \font_default_family sfdefault
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -72,15 +72,24 @@
 \pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -158,8 +167,8 @@ Statement to the bachelor, master or diploma thesis
 \end_layout
 
 \begin_layout Standard
-I assure that I have written the diploma thesis independently, without outside
- help.
+I assure that I have written the bachelor, master or diploma thesis independentl
+y, without outside help.
 \end_layout
 
 \begin_layout Standard
@@ -240,9 +249,8 @@ Acknowledgement
 
 \begin_layout Standard
 This document is for students and is primarily used by students.
- Nevertheless it is also improved by students feedback and proposals.
- So let me thank all my students who have used this document so far to write
- a thesis.
+ Nevertheless, it is also improved by students feedback and proposals.
+ So, let me thank all my students who contributed to this document so far.
 \end_layout
 
 \begin_layout Itemize
@@ -252,6 +260,10 @@ Summer 2011: Yinlong Xie, Kangping Liu and Jiewei Wang
 \begin_layout Itemize
 Summer 2012: Daniel Schultz, Philip Schikora, Michael Schultze, Ilja Antipov
  and Florian Hübner
+\end_layout
+
+\begin_layout Itemize
+Summer 2016: 
 \end_layout
 
 \begin_layout Standard
@@ -353,7 +365,7 @@ reference "sec:General-writing-advices"
 
 \end_inset
 
- and additional hints how to write an introduction for your thesis document
+ and additional hints on how to write an introduction for your thesis document
  (see section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -366,8 +378,8 @@ reference "sec:Advices-to-introduce"
 \end_layout
 
 \begin_layout Standard
-The following chapters concentrate how to general structure a software intensive
- bachelor, master or diploma thesis.
+The following chapters concentrate on how to general structure a software
+ intensive bachelor, master or diploma thesis.
  Therefore chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -491,7 +503,7 @@ Your target audience may be computer scientists but it is likely that they
 
 \begin_layout Itemize
 Especially your second supervisor might be no domain expert.
- Keep him oder her in mind while writing.
+ Keep him or her in mind while writing.
  But be aware it is very likely that you first get to know your second superviso
 r after you have finished writing your thesis.
  This is challenging but also very disciplining for writing.
@@ -715,8 +727,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="left" valignment="top" width="25col%">
 <column alignment="left" valignment="top" width="60col%">
 <row>
@@ -930,7 +942,7 @@ http://jabref.sourceforge.net/
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 A proper TeX Tool suite
@@ -1052,7 +1064,7 @@ points
 \end_inset
 
  to a text element which stands before the actual paragraph.
- Forward references are used to remind the reader that something has been
+ Backward references are used to remind the reader that something has been
  already described in your thesis in order to provide some summarizing facts
  of these paragraphs which might be of interest for him in order to understand
  the actual paragraph better.
@@ -1069,16 +1081,15 @@ reference "sec:Use-word-processors"
 \end_layout
 
 \begin_layout Standard
-So references are used to provide guidance within your own thesis document
+So, references are used to provide guidance within your own thesis document
  and your own thoughts.
- Nevertheless you have to deal with other form of sources in your thesis.
+ Nevertheless, you have to deal with other forms of sources in your thesis.
  You will use books, articles, websites, etc.
  in order to collect and reflect necessary knowledge/facts from other authors
  publications.
  To use their ideas or texts in an unmarked way is called plagiarism and
  will make you fail! It is therefore common academical practice to use their
- publications but mark every idea which originating in other authors publication
-s.
+ publications but mark every idea which originates in other authors publications.
  Especially your complete literature research (see chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1141,7 +1152,7 @@ reference "sub:Example:-How-to-quote"
 
  shows some quoting examples.
  If a quote can not be found in a referenceable publication it has not to
- enlisted in the bibliography of your thesis.
+ be enlisted in the bibliography of your thesis.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1156,7 +1167,7 @@ name "sub:Example:-How-to-reference"
 \end_layout
 
 \begin_layout Standard
-The referencing principle is made obvious by providing an so called outline
+The referencing principle is made obvious by providing a so called outline
  as an example.
  An outline describes the general structure of a document in a summarizing
  and forward referencing way.
@@ -1248,7 +1259,7 @@ reference "chap:Test-and-Evaluation"
 \end_layout
 
 \begin_layout Plain Layout
-This template provides additional hints how to summarize your work, derive
+This template provides additional hints on how to summarize your work, derive
  some conclusions of major relevance and provide an outlook (if possible)
  in the last chapter 
 \begin_inset CommandInset ref
@@ -1645,7 +1656,7 @@ good looking
 Do not over structure your thesis
 \series default
  in depth.
- Set you a maximum level of section depth before you start writing.
+ Set yourself a maximum level of section depth before you start writing.
  A good depth would be three -- for exceptional cases you can use an additional
  fourth section layer.
  Try to keep this level across your complete thesis documentation.
@@ -1664,7 +1675,7 @@ Do not introduce single subsections.
 \series default
  If you introduce only one subsection in a section this subsection is useless!
  Integrate it in your main section.
- When ever you introduce a section 1.x.1 you should have also a section 1.x.2.
+ Whenever you introduce a section 1.x.1 you should have also a section 1.x.2.
  If not -- integrate 1.x.1 with 1.x.
 \end_layout
 
@@ -1890,19 +1901,19 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="12">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2155,7 +2166,7 @@ Grade
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Grade scale of last OOP exam
@@ -2222,7 +2233,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Model View Controller Pattern
@@ -2567,7 +2578,7 @@ and reflect your thesis task description (or statement of work).
 
 \begin_layout Standard
 In alignment with your thesis task description you should finally develop
- an general outline of your thesis document which helps the reader to understand
+ a general outline of your thesis document which helps the reader to understand
  the general structure of your thesis.
  Therefore the outline should provide an overview of the ongoing chapters
  of your thesis (see section how to write an efficient outline 
@@ -2603,7 +2614,7 @@ Do not assume any background knowledge from the reader in the introduction
 \end_layout
 
 \begin_layout Itemize
-It is very likely that your introduction chapter changes more than ones.
+It is very likely that your introduction chapter changes more than once.
  A good strategy is to write your introduction in the very beginning and
  write it in the finalizing phase completely new!
 \end_layout
@@ -2809,7 +2820,7 @@ name "sec:Software-Requirements-Analysis"
 \lang ngerman
 Next step could be a more detailled software requirements analysis.
  You should derive more detailled requirements by analysing your product
- feature catalog.There exist several requirement engineering methodologies
+ feature catalog.There exist several requirements engineering methodologies
  to do this.
  Most common might be the use case analysis methodology.
  But often a pure textual refinement of your software requirments would
@@ -2951,14 +2962,14 @@ status open
 \lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="24" columns="7">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4697,7 +4708,7 @@ x
 \begin_layout Plain Layout
 
 \lang ngerman
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -4823,7 +4834,7 @@ status open
 \begin_layout Plain Layout
 
 \lang ngerman
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -4941,7 +4952,7 @@ reference "chap:Literature-Research-and"
 If you provide only a/some component(s) to a system/software you should
  use the here presented architecture to depict your part of responsibility
  (components of responsibility).
- It is a good strategy to do this in graphical way.
+ It is a good strategy to do this in graphic.
 \end_layout
 
 \begin_layout Standard
@@ -5017,7 +5028,7 @@ Architecture Design Decisions
 \end_layout
 
 \begin_layout Standard
-If there exist more than one usefull architecture you should discuss pros
+If there exist more than one useful architecture you should discuss pros
  and cons of the several solutions and decide for the most appropriate one
  from your point of view.
 \end_layout
@@ -5057,7 +5068,7 @@ reference "fig:System--Kontext-Diagramm"
 
 \end_inset
 
-shows an example for a good system architecture/context diagram.
+ shows an example for a good system architecture/context diagram.
 \end_layout
 
 \begin_layout Standard
@@ -5080,7 +5091,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -5114,8 +5125,8 @@ key "Huebner2012"
 \begin_layout Standard
 
 \lang ngerman
-It is furthermoe a good idea to map your architecture elements to your software
- requirements in order to check the completeness of your architecture.
+Furthermore, it is a good idea to map your architecture elements to your
+ software requirements in order to check the completeness of your architecture.
  This can be done by providing a simple mapping table shown in table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5140,14 +5151,14 @@ status open
 \lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="24" columns="7">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -5162,7 +5173,7 @@ Requirement x System Architecture Entity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5175,7 +5186,7 @@ Account Activity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5188,7 +5199,7 @@ Start Activity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5201,7 +5212,7 @@ Sync Activity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5214,7 +5225,7 @@ Clean Activity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5227,7 +5238,7 @@ Show Activity
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5844,7 +5855,7 @@ x
 
 \size footnotesize
 \lang ngerman
-Req 9 (cross-region opertors)
+Req 9 (cross-region operators)
 \end_layout
 
 \end_inset
@@ -6223,7 +6234,7 @@ x
 
 \size footnotesize
 \lang ngerman
-Req 14 (how volumes)
+Req 14 (show volumes)
 \end_layout
 
 \end_inset
@@ -6965,7 +6976,7 @@ x
 \begin_layout Plain Layout
 
 \lang ngerman
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -7034,9 +7045,9 @@ reference "chap:System-Architecture"
 
 ) to the here presented software architecture.
  The detail level depends on your thesis subject.
- It might be necessary to derive detail architectures for very complex component
-s.
- It might be also necessary to provide some data models if you have an data
+ It might be necessary to derive detailed architectures for very complex
+ components.
+ It might be also necessary to provide some data models if you have a data
  intensive problem to solve.
 \end_layout
 
@@ -7100,7 +7111,7 @@ reference "chap:System-Architecture"
 \end_layout
 
 \begin_layout Itemize
-Do not provide to detailed models in this section.
+Do not provide too detailed models in this section.
  If you need to provide details of crucial relevance you should document
  this in the following chapter 
 \begin_inset CommandInset ref
@@ -7117,7 +7128,7 @@ Software Architecture Design Decisions
 \end_layout
 
 \begin_layout Standard
-If there exist more than one usefull software architecture you should discuss
+If there exist more than one useful software architecture you should discuss
  pros and cons of the several solutions and decide for the most appropriate
  one from your point of view.
 \end_layout
@@ -7177,7 +7188,7 @@ status open
 \end_inset
 
 
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -7267,8 +7278,8 @@ If you use different programming languages like JAVA, Python, C, C++, Haskell,
  you should explain the key programming paradigms of these programing languages
  from a general point of view (provide references to your sources) and provide
  reasons why you used which language for which component.
- You should also describe how do you have handled architecture principles
- on implementation level.
+ You should also describe how you have handled architecture principles on
+ implementation level.
  
 \end_layout
 
@@ -7367,7 +7378,7 @@ It is a good strategy to identify and describe the relevant extension points
 \end_layout
 
 \begin_layout Standard
-I a second step you should demonstrate how your solution can be extended
+In a second step you should demonstrate how your solution can be extended
  by a simple example in step by step how-to/tutorial manner.
 \end_layout
 
@@ -7700,30 +7711,30 @@ status open
 \lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="37" columns="23">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -7958,7 +7969,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7970,7 +7981,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7982,7 +7993,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -7994,7 +8005,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8006,7 +8017,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8018,7 +8029,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8030,7 +8041,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8042,7 +8053,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8054,7 +8065,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8066,7 +8077,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8078,7 +8089,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8090,7 +8101,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8102,7 +8113,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8114,7 +8125,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8126,7 +8137,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8138,7 +8149,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8150,7 +8161,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8162,7 +8173,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8174,7 +8185,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8186,7 +8197,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -8198,7 +8209,7 @@ Testlevel
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="90" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -15769,11 +15780,11 @@ x
 \lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="4">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -15834,7 +15845,7 @@ LT Live test
 \begin_layout Plain Layout
 
 \lang ngerman
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -15913,11 +15924,11 @@ status open
 \lang ngerman
 \begin_inset Tabular
 <lyxtabular version="3" rows="36" columns="4">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -17603,7 +17614,7 @@ successfull
 \begin_layout Plain Layout
 
 \lang ngerman
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -17752,8 +17763,8 @@ Do not assume any background knowledge from the reader (like in the introduction
 \end_layout
 
 \begin_layout Itemize
-After you have finished you this chapter you should think about a complete
- rework of your introduction chapter in order to get both deeply aligned.
+After you have finished this chapter you should think about a complete rework
+ of your introduction chapter in order to get both deeply aligned.
  Remember the introduction and this summary chapter are the most read chapters
  of your thesis.
  They are little bit like a business card of yours.
@@ -17795,16 +17806,16 @@ name "chap:Appendix-I"
 
 \begin_layout Standard
 If you want to provide detailed information to some aspects, e.g.
- detailed configuration options.
- You should describe the main and key aspects within your thesis document
- and reference all additional details to an appropriate appendix section.
- So you can keep your text well structured, understandable and readable
+ detailed configuration options, you should describe the main and key aspects
+ within your thesis document and reference all additional details to an
+ appropriate appendix section.
+ That way, you can keep your text well structured, understandable and readable
  as well as provide all necessary details.
  
 \end_layout
 
 \begin_layout Standard
-May be you want to embed a long source code like listing 
+Maybe you want to embed a long source code like listing 
 \begin_inset ERT
 status open
 
